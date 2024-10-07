@@ -1,0 +1,38 @@
+{
+    "name": "nativedump",
+    "version": "0.0.1",
+    "command_name": "nativedump",
+    "extension_author": "brmk",
+    "original_author": "ricardojoserf",
+    "repo_url": "https://github.com/ricardojoserf/NativeDump",
+    "help": "Dump credentials using native methods API",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+        {
+            "os": "windows",
+            "arch": "amd64",
+            "path": "nativedump_bof.o"
+        }
+    ],
+    "arguments": [
+        {
+            "name": "technique",
+            "desc": "Choose: disk, knowndlls, debugproc",
+            "type": "string",
+            "optional": false
+        },
+        {
+            "name": "filename",
+            "desc": "Path to the dump file",
+            "type": "string",
+            "optional": false
+        },
+        {
+            "name": "xorkey",
+            "desc": "Key to xor the dump with (optional)",
+            "type": "int",
+            "optional": true
+        }
+    ]
+}
