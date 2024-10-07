@@ -18,7 +18,7 @@
     "arguments": [
         {
             "name": "technique",
-            "desc": "use the value -> disk 09000000050000006469736b00\n\t\tknowndlls 0e0000000a0000006b6e6f776e646c6c7300\n\t\tdebugproc 0e0000000a000000646562756770726f6300",
+            "desc": "use the value -> disk 09000000050000006469736b00\n\t\t\t\t\tknowndlls 0e0000000a0000006b6e6f776e646c6c7300\n\t\t\t\t\tdebugproc 0e0000000a000000646562756770726f6300",
             "type": "string",
             "optional": true
         },
