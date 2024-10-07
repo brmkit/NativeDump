@@ -5,7 +5,7 @@
     "extension_author": "brmk",
     "original_author": "ricardojoserf",
     "repo_url": "https://github.com/ricardojoserf/NativeDump",
-    "help": "Dump credentials using native methods API",
+    "help": "Dump credentials using native methods API.\nDefault method: disk\nDefault file: native.dmp",
     "depends_on": "coff-loader",
     "entrypoint": "go",
     "files": [
@@ -18,15 +18,15 @@
     "arguments": [
         {
             "name": "technique",
-            "desc": "Choose: disk, knowndlls, debugproc",
+            "desc": "use the value -> disk 09000000050000006469736b00\n\t\tknowndlls 0e0000000a0000006b6e6f776e646c6c7300\n\t\tdebugproc 0e0000000a000000646562756770726f6300",
             "type": "string",
-            "optional": false
+            "optional": true
         },
         {
             "name": "filename",
             "desc": "Path to the dump file",
             "type": "string",
-            "optional": false
+            "optional": true
         },
         {
             "name": "xorkey",
