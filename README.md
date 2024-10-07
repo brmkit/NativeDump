@@ -1,5 +1,7 @@
-# NativeDump - "bof-flavour" branch
+# NativeDump - sliver extension
+Just a simple implementation of NativeDump in Sliver C2, now it doesn't support arguments - i'm working on it.
 
+# NativeDump
 This branch implements the same functionality as the main branch using BOF files: 
 - Minidump file generation using only NTAPIS
 - Overwrite the Ntdll.dll library (Optional)
